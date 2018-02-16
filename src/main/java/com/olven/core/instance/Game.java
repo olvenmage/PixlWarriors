@@ -1,17 +1,21 @@
 package com.olven.core.instance;
 
+import com.fasterxml.jackson.core.type.TypeReference;
 import com.olven.core.encounters.LootTable;
 import com.olven.core.entities.attributes.Stats;
 import com.olven.core.event.Responder;
 import com.olven.core.entities.player.Player;
 import com.olven.core.event.Event;
 import com.olven.core.instance.parsers.ArmorParser;
+import com.olven.core.instance.parsers.ItemSetParser;
+import com.olven.core.instance.parsers.LootTableParser;
 import com.olven.core.instance.parsers.Parser;
 import com.olven.core.instance.stages.Stages;
 import com.olven.core.items.Item;
 import com.olven.core.sets.ItemSet;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Scanner;
 
@@ -58,9 +62,9 @@ public class Game {
 
         Game.log("Loading resources");
         Game.log("----------------");
-        new Parser<LootTable>("/LootTables.yml", "table");
-        new Parser<ItemSet>("/ItemSets.yml", "item_set");
-        ArmorParser.parse();
+        new LootTableParser();
+        new ItemSetParser();
+        new ArmorParser();
         Game.log("----------------");
 
         if (stage == Stages.Debugging) {

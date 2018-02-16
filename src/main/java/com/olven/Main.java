@@ -11,6 +11,7 @@ import com.olven.core.entities.effects.debuffs.Vulnerable;
 import com.olven.core.entities.player.Player;
 import com.olven.core.instance.stages.Stages;
 import com.olven.core.inventory.InventorySlot;
+import com.olven.core.items.CombatItem;
 import com.olven.core.items.ItemEntity;
 import com.olven.core.quests.types.KillQuest;
 import com.olven.core.sets.ItemSet;
@@ -39,9 +40,15 @@ public class Main {
 
 
         Map<String, Object> collection = Game.storage.getCollection();
-//        List<ItemEntity> loot = Game.table("GOBLIN_TABLE1").getDrop();
+        List<ItemEntity> loot = Game.table("GOBLIN_TABLE1").getDrop();
+
+        player.inventory.addItem(Game.item("TEST_HELMET"));
+        player.equipItem((CombatItem) Game.item("TEST_HELMET"));
+
 
         ItemSet testSet = Game.itemSet("TEST_SET");
+
+        boolean bonus = testSet.check();
 
         player.takeDamage(20);
 
@@ -52,8 +59,6 @@ public class Main {
         fight.kill(gobl);
         fight.kill(gobl);
         fight.kill(gobl);
-
-
 
         Game.print(player.stats.getStat(Attributes.Dexterity).getCurrent());
 

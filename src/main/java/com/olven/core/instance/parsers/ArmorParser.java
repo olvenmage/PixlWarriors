@@ -12,9 +12,9 @@ import java.net.URISyntaxException;
 import java.net.URL;
 import java.util.HashMap;
 
-public abstract class ArmorParser {
+public class ArmorParser {
 
-    public static void parse() {
+    public ArmorParser() {
 
         ObjectMapper mapper = new ObjectMapper(new YAMLFactory());
         HashMap<String, ItemSlots> slots = new HashMap<>();
