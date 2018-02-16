@@ -2,18 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f0cb1804-c83c-4729-96cc-baeb4611d3a3" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/olven/core/instance/parsers/LootTableParser.java" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/olven/Main.java" afterPath="$PROJECT_DIR$/src/main/java/com/olven/Main.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/olven/core/instance/Game.java" afterPath="$PROJECT_DIR$/src/main/java/com/olven/core/instance/Game.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/olven/core/instance/parsers/ArmorParser.java" afterPath="$PROJECT_DIR$/src/main/java/com/olven/core/instance/parsers/ArmorParser.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/olven/core/instance/parsers/Parser.java" afterPath="$PROJECT_DIR$/src/main/java/com/olven/core/instance/parsers/Parser.java" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/olven/core/sets/ItemSet.java" afterPath="$PROJECT_DIR$/src/main/java/com/olven/core/sets/ItemSet.java" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/olven/Main.class" afterPath="$PROJECT_DIR$/target/classes/com/olven/Main.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/olven/core/instance/Game.class" afterPath="$PROJECT_DIR$/target/classes/com/olven/core/instance/Game.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/olven/core/instance/parsers/Parser$1.class" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/olven/core/instance/parsers/Parser.class" afterPath="$PROJECT_DIR$/target/classes/com/olven/core/instance/parsers/Parser.class" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/olven/core/sets/ItemSet.class" afterPath="$PROJECT_DIR$/target/classes/com/olven/core/sets/ItemSet.class" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/olven/core/quests/Quest.java" afterPath="$PROJECT_DIR$/src/main/java/com/olven/core/quests/Quest.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/olven/core/quests/types/GenericQuest.java" afterPath="$PROJECT_DIR$/src/main/java/com/olven/core/quests/types/GenericQuest.java" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/olven/core/quests/types/KillQuest.java" afterPath="$PROJECT_DIR$/src/main/java/com/olven/core/quests/types/KillQuest.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -32,8 +24,8 @@
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/olven/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="579">
-              <caret line="52" column="0" lean-forward="false" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
+            <state relative-caret-position="243">
+              <caret line="38" column="82" lean-forward="false" selection-start-line="38" selection-start-column="82" selection-end-line="38" selection-end-column="82" />
               <folding />
             </state>
           </provider>
@@ -97,8 +89,8 @@
       <file leaf-file-name="Equipment.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/olven/core/items/armor/slots/Equipment.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="159">
-              <caret line="13" column="34" lean-forward="false" selection-start-line="13" selection-start-column="34" selection-end-line="13" selection-end-column="34" />
+            <state relative-caret-position="15">
+              <caret line="7" column="21" lean-forward="true" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -106,40 +98,34 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ItemSlots.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/olven/core/items/armor/slots/ItemSlots.java">
+      <file leaf-file-name="Quest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/olven/core/quests/Quest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="72">
-              <caret line="3" column="4" lean-forward="false" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Parser.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/olven/core/instance/parsers/Parser.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="758">
-              <caret line="50" column="0" lean-forward="false" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
+            <state relative-caret-position="336">
+              <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
               <folding>
-                <element signature="e#1281#1282#0" expanded="true" />
-                <element signature="e#1333#1334#0" expanded="true" />
-                <element signature="e#1377#1378#0" expanded="true" />
-                <element signature="e#1413#1414#0" expanded="true" />
-                <element signature="e#1458#1459#0" expanded="true" />
-                <element signature="e#1498#1499#0" expanded="true" />
-                <element signature="e#1535#1536#0" expanded="true" />
-                <element signature="e#1571#1572#0" expanded="true" />
+                <element signature="e#402#403#0" expanded="true" />
+                <element signature="e#461#462#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ArmorParser.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/olven/core/instance/parsers/ArmorParser.java">
+      <file leaf-file-name="KillQuest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/olven/core/quests/types/KillQuest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="96">
-              <caret line="14" column="6" lean-forward="true" selection-start-line="14" selection-start-column="6" selection-end-line="14" selection-end-column="6" />
+            <state relative-caret-position="136">
+              <caret line="14" column="8" lean-forward="false" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="52" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GenericQuest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/olven/core/quests/types/GenericQuest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="192">
+              <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -220,13 +206,10 @@
         <option value="$PROJECT_DIR$/src/main/java/com/olven/core/entities/effects/debuffs/Vulnerable.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/olven/core/encounters/Fight.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/olven/core/quests/types/EventQuest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/olven/core/quests/types/GenericQuest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/olven/core/instance/Check.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/olven/core/inventory/InventorySlot.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/olven/core/quests/types/KillQuest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/olven/core/quests/QuestLog.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/olven/core/event/Responder.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/olven/core/quests/Quest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/olven/core/event/ResponderInterface.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/olven/core/items/armor/ArmorTypes.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/olven/core/items/armor/ArmorClass.java" />
@@ -243,8 +226,11 @@
         <option value="$PROJECT_DIR$/src/main/java/com/olven/core/instance/parsers/ArmorParser.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/olven/core/instance/Game.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/olven/core/instance/parsers/ItemSetParser.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/olven/Main.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/olven/core/sets/ItemSet.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/olven/core/quests/Quest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/olven/core/quests/types/KillQuest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/olven/core/quests/types/GenericQuest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/olven/Main.java" />
       </list>
     </option>
   </component>
@@ -659,15 +645,16 @@
       <workItem from="1518697498193" duration="3421000" />
       <workItem from="1518701127675" duration="194000" />
       <workItem from="1518764894510" duration="4311000" />
-      <workItem from="1518779857602" duration="5076000" />
+      <workItem from="1518779857602" duration="6287000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="146761000" />
+    <option name="totallyTimeSpent" value="147972000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1280" y="-617" width="1720" height="1348" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
@@ -688,7 +675,7 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32836992" sideWeight="0.49534884" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32836992" sideWeight="0.49534884" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -766,15 +753,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/olven/core/quests/types/KillQuest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="355">
-          <caret line="30" column="28" lean-forward="false" selection-start-line="30" selection-start-column="28" selection-end-line="30" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/olven/core/quests/types/GenericQuest.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/olven/core/entities/player/ExperienceTable.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -811,16 +789,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="5" column="14" lean-forward="true" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/olven/core/quests/Quest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="648">
-          <caret line="33" column="36" lean-forward="false" selection-start-line="33" selection-start-column="36" selection-end-line="33" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -881,7 +849,7 @@
         <state relative-caret-position="168">
           <caret line="7" column="11" lean-forward="false" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="11" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
             <element signature="e#204#205#0" expanded="false" />
             <element signature="e#238#239#0" expanded="false" />
           </folding>
@@ -919,8 +887,8 @@
         <state relative-caret-position="288">
           <caret line="17" column="34" lean-forward="false" selection-start-line="17" selection-start-column="34" selection-end-line="17" selection-end-column="34" />
           <folding>
-            <element signature="e#485#486#0" expanded="true" />
-            <element signature="e#547#548#0" expanded="true" />
+            <element signature="e#485#486#0" expanded="false" />
+            <element signature="e#547#548#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1027,16 +995,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/olven/core/items/armor/slots/Equipment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="159">
-          <caret line="13" column="34" lean-forward="false" selection-start-line="13" selection-start-column="34" selection-end-line="13" selection-end-column="34" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/olven/core/instance/parsers/ItemSetParser.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="264">
@@ -1044,14 +1002,6 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/olven/core/items/armor/slots/ItemSlots.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="3" column="4" lean-forward="false" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1063,10 +1013,55 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/olven/core/items/armor/slots/ItemSlots.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="3" column="4" lean-forward="false" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/olven/core/items/armor/slots/Equipment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="7" column="21" lean-forward="true" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/olven/core/quests/Quest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding>
+            <element signature="e#402#403#0" expanded="true" />
+            <element signature="e#461#462#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/olven/core/quests/types/KillQuest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="14" column="8" lean-forward="false" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/olven/core/quests/types/GenericQuest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/olven/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="579">
-          <caret line="52" column="0" lean-forward="false" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
+        <state relative-caret-position="243">
+          <caret line="38" column="82" lean-forward="false" selection-start-line="38" selection-start-column="82" selection-end-line="38" selection-end-column="82" />
           <folding />
         </state>
       </provider>

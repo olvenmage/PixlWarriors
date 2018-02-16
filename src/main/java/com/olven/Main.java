@@ -36,7 +36,7 @@ public class Main {
 
         Enemy gobl = new Goblin(3, 2, null);
 
-        player.questLog.add(new KillQuest("Test", "hoi", new NPC(), gobl, 3));
+        player.questLog.add(new KillQuest("Test", "hoi", new NPC(), gobl, 3, false));
 
 
         Map<String, Object> collection = Game.storage.getCollection();

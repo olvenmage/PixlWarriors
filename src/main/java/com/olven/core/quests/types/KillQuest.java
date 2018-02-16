@@ -11,8 +11,8 @@ public class KillQuest extends Quest {
     private int amount;
     private int progress;
 
-    public KillQuest(String name, String description, NPC completesAt, Enemy enemy, int amount) {
-        super(name, description, completesAt);
+    public KillQuest(String name, String description, NPC completesAt, Enemy enemy, int amount, boolean main) {
+        super(name, description, completesAt, main);
 
         this.enemy = enemy;
         this.amount = amount;

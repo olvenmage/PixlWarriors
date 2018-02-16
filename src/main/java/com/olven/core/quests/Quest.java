@@ -9,11 +9,17 @@ public class Quest extends Responder {
     private String description;
     private NPC completesAt;
     private boolean done = false;
+    private boolean main;
 
     public Quest(String name, String description, NPC completesAt) {
+        this(name, description, completesAt, false);
+    }
+
+    public Quest(String name, String description, NPC completesAt, boolean main) {
         this.name = name;
         this.description = description;
         this.completesAt = completesAt;
+        this.main = main;
     }
 
     public String getName() {

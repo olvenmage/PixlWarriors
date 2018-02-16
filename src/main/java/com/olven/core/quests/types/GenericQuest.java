@@ -6,8 +6,8 @@ import com.olven.core.quests.Quest;
 
 public class GenericQuest extends Quest {
 
-    public GenericQuest(String name, String description, NPC completesAt, Event event) {
-        super(name, description, completesAt);
+    public GenericQuest(String name, String description, NPC completesAt, Event event, boolean main) {
+        super(name, description, completesAt, main);
 
         this.setEvent(event);
     }
