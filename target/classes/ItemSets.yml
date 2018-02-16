@@ -1,0 +1,4 @@
+TEST_SET:
+  name: "Borne"
+  collection:
+    helmet: "TEST_HELMET"

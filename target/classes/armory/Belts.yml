@@ -1,0 +1,8 @@
+TEST_BELT:
+  name: "Douwe's Belt"
+  price: 120
+  recipe:
+    ingredients:
+      TEST_ITEM: 3
+  requirements:
+      dexterity: 3

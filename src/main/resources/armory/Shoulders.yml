@@ -1,0 +1,21 @@
+TEST_SHOULDERS:
+  name: "testShoulders"
+  price: 120
+  recipe:
+    null: null
+  requirements:
+    null: null
+
+JAKES_SHOULDERS:
+  name: "jake's shoulders"
+  price: 999
+  recipe:
+    ingredients:
+      testShoulders: 1
+      bone: 6
+    min: 1
+    max: 1
+  requirements:
+    strength: 6
+    dexterity: 10
+    vitality: 9
