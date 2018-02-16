@@ -1,6 +1,7 @@
 package com.olven.core.sets;
 
 import com.fasterxml.jackson.annotation.JsonCreator;
+import com.fasterxml.jackson.annotation.JsonProperty;
 import com.olven.core.instance.Game;
 import com.olven.core.items.Item;
 import com.olven.core.items.armor.slots.ItemSlots;
@@ -14,7 +15,9 @@ public class ItemSet {
     //effect
 
     @JsonCreator
-    public ItemSet(String name, HashMap<String, String> collection) {
+    public ItemSet(
+            @JsonProperty("name") String name,
+            @JsonProperty("collection") HashMap<String, String> collection) {
         this.name = name;
         this.collection = collection;
     }
@@ -28,7 +31,7 @@ public class ItemSet {
             String slot = (String) entry.getKey();
             String item = (String) entry.getValue();
 
-            if (Game.player.getEquiped(slot) != Game.item(item)) {
+            if (Game.player.getEquiped(Character.toUpperCase(slot.charAt(0)) + slot.substring(1)) != Game.item(item)) {
                 return false;
             }
         }

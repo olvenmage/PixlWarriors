@@ -14,40 +14,46 @@ import java.util.HashMap;
 import java.util.List;
 
 public class Parser<T> {
-    public Parser(String path, String prefix) {
-        ObjectMapper mapper = new ObjectMapper(new YAMLFactory());
+    private TypeReference typeReference;
+    private URL url;
+    private String prefix;
 
-        URL url = System.class.getResource(path);
-        String filename = new File(url.getPath()).getName();
+   public void addResources() {
+       ObjectMapper mapper = new ObjectMapper(new YAMLFactory());
 
-        try {
-            HashMap<String, T> read = mapper.readValue(url, new TypeReference<HashMap<String, T>>() {
-            });
+       String filename = new File(url.getPath()).getName();
 
-            if (!read.isEmpty()) {
-                Game.log("--- " + filename + " ---");
-                read.forEach((key, table) -> {
-                    Game.storage.addGeneric(key, table, prefix);
-                    Game.log("Table [" + key + "] loaded");
-                });
+       try {
+           HashMap<String, T> read = mapper.readValue(url, typeReference);
+
+           if (!read.isEmpty()) {
+               Game.log("--- " + filename + " ---");
+               read.forEach((key, table) -> {
+                   Game.storage.addGeneric(key, table, prefix);
+                   Game.log("Table [" + key + "] loaded");
+               });
 
 
-                Game.log("Loaded [" + read.size() + "]");
-            }
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
+               Game.log("Loaded [" + read.size() + "]");
+           }
+       } catch (Exception e) {
+           e.printStackTrace();
+       }
+   }
 
+    public void setURL(String path) {
+        url = System.class.getResource(path);
     }
 
-    protected static <T> List<T> mapJsonToObjectList(T typeDef, String json, Class clazz) throws Exception
-    {
-        List<T> list;
-        ObjectMapper mapper = new ObjectMapper();
-        System.out.println(json);
-        TypeFactory t = TypeFactory.defaultInstance();
-        list = mapper.readValue(json, t.constructCollectionType(ArrayList.class,clazz));
+    public void setPrefix(String prefix) {
+        this.prefix = prefix;
+    }
 
-        return list;
+    public void setRef(TypeReference ref) {
+        this.typeReference = ref;
+    }
+
+    public TypeReference getRef() {
+        return typeReference;
     }
 }
